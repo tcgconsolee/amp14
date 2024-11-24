@@ -1,0 +1,406 @@
+@font-face {
+    font-family: "sf-bi";
+    src: url(./fonts/sf-pro-display-cufonfonts/SFPRODISPLAYBLACKITALIC.OTF);
+}
+@font-face {
+    font-family: "sf-b";
+    src: url(./fonts/sf-pro-display-cufonfonts/SFPRODISPLAYBOLD.OTF);
+}
+@font-face {
+    font-family: "sf-hi";
+    src: url(./fonts/sf-pro-display-cufonfonts/SFPRODISPLAYHEAVYITALIC.OTF);
+}
+@font-face {
+    font-family: "sf-li";
+    src: url(./fonts/sf-pro-display-cufonfonts/SFPRODISPLAYLIGHTITALIC.OTF);
+}
+@font-face {
+    font-family: "sf-m";
+    src: url(./fonts/sf-pro-display-cufonfonts/SFPRODISPLAYMEDIUM.OTF);
+}
+@font-face {
+    font-family: "sf";
+    src: url(./fonts/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF);
+}
+@font-face {
+    font-family: "sf-sbi";
+    src: url(./fonts/sf-pro-display-cufonfonts/SFPRODISPLAYSEMIBOLDITALIC);
+}
+@font-face {
+    font-family: "sf-ti";
+    src: url(./fonts/sf-pro-display-cufonfonts/SFPRODISPLAYTHINITALIC.OTF);
+}
+@font-face {
+    font-family: "sf-uli";
+    src: url(./fonts/sf-pro-display-cufonfonts/SFPRODISPLAYULTRALIGHTITALIC.OTF);
+}
+@font-face {
+    font-family: "d";
+    src: url(./fonts/buttershine.otf);
+}
+.cursor{
+    position: absolute;
+    width: 1.5vmax;
+    height: 1.5vmax;
+    top: 0;
+    left: 0;
+    z-index: 51;
+    transform: translate(-50%, -50%);
+    border: 0.001vmin #fff solid;
+    opacity: 0.45;
+    border-radius: 100%;
+    pointer-events: none;
+  }
+  * {
+    cursor: none;
+  }
+body {
+    background: #000000;
+    color: #fff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+}
+.contact-nav {
+    position: fixed;
+    left: 2vw;
+    bottom: 2vmax;
+    border: rgba(255, 255, 255, 0.44) 0.0001vmin solid;
+    border-radius: 3vmax;
+    width: min-content;
+    height: min-content;
+    display: grid;
+    grid-template-columns: 2vmax 2vmax;
+    column-gap: 0.5vmax;
+    padding: 0.5vmax;
+    z-index: 50;
+    opacity: 1;
+    backdrop-filter: blur(1px);
+}
+.contact-nav > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    pointer-events: all;
+}
+.contact-nav img {
+    width: 70%;
+    opacity: 0.45;
+    transition: opacity 500ms ease-in-out;
+}
+.contact-nav img:hover {
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+}
+p {
+    margin: 0;
+}
+.home {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "d";
+    font-size: 2.5vmax;
+    text-align: center;
+}
+.amp14 {
+    position: absolute;
+    left: 2vw;
+    top: 2vmax;
+    font-family: "d";
+    font-size: 1vmax;
+    text-align: left;
+    text-wrap: nowrap;
+}
+.fields {
+    position: absolute;
+    right: 2vw;
+    top: 2vmax;
+    font-family: "sf";
+    font-size: 1vmax;
+    text-align: right;
+    text-wrap: nowrap;
+    width: min-content;
+}
+.round {
+    content: "";
+    position: absolute;
+    left: 1.5%;
+    top: 50%;
+    transform: translate(-25%, -50%) scale(0.65);
+}
+.time {
+    position: absolute;
+    right: 2vw;
+    top: 3.5vmax;
+    text-align: right;
+    text-wrap: nowrap;
+    font-size: 0.7vmax;
+    font-family: "sf";
+}
+.bgt {
+    position: absolute;
+    left: 0vw;
+    top: 0;
+    width: 100vw;
+    word-break: break-all;
+    height: 100vh;
+    font-size: 20vw;
+    font-family: "d";
+    color: rgba(255,255,255,0.44);
+    line-height: 80%;
+    opacity: 5%;
+    overflow: hidden;
+    z-index: -1;
+    cursor: default;
+}
+.bgt p {
+    position: absolute;
+    left: -50vw;
+    width: 200vw;
+}
+.works {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 4;
+    height: 80vmin;
+    pointer-events: all;
+}
+.index {
+    position: absolute;
+    top: 2vw;
+    left: 2vmax;
+    font-family: "sf-m";
+    font-size: 0.7vmax;
+}
+.workbar {
+    position: relative;
+    top: 10vmax;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    height: 10vmin;
+    display: grid;
+    grid-template-columns: 60% 30% 10%;
+    pointer-events: all;
+    z-index: 2;
+    color: rgba(255, 255, 255, 0.44);
+    transition: color 500ms ease-in-out;
+}
+.workbar:hover {
+    color: rgba(255, 255, 255);
+    transition: color 500ms ease-in-out;
+}
+.workbar::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.25);
+    transition: all 500ms ease-in-out;
+}
+.workbar::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+.workbar:hover::after {
+    opacity: 1;
+    width: 100%;
+    transition: width 500ms ease-in-out;
+}
+.wb-i {
+    display: flex;
+    flex-direction: column;
+    font-family: "sf";
+    justify-content: center;
+}
+.wb-h {
+    font-size: 1.25vmax;
+}
+.wb-t {
+    font-size: 0.75vmax;
+}
+.wb-y {
+    font-size: 0.5vmax;
+}
+::-webkit-scrollbar {
+    background: #000000;
+}
+.aditya, .patil {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(0px);
+    transition: filter 500ms ease-in-out;
+}
+.aditya:hover, .patil:hover {
+    filter: blur(2.5px);
+    transition: filter 500ms ease-in-out;
+}
+.aditya {
+    animation: textappear 2s ease-out forwards;
+}
+.patil {
+    animation: textappear_1 2s ease-in-out forwards;
+}
+@keyframes textappear{
+    0%{
+       transform: translate3d(0px, -160%, 0px) rotateZ(-4deg) rotateX(10deg);
+       opacity: 0;
+    }
+    99% {
+        transform: translate3d(0px, 0px, 0px) rotateZ(0deg) rotateX(0deg);
+       opacity: 1;
+    }
+    100%{
+      transform: translate3d(0px, 0px, 0px) rotateZ(0deg) rotateX(0deg);
+       opacity: 1;
+    }
+}
+@keyframes textappear_1{
+    0%{
+      transform: translate3d(0px, -160%, 0px) rotateZ(-4deg) rotateX(10deg);
+      opacity: 0;
+   }
+   99% {
+    transform: translate3d(0px, 0px, 0px) rotateZ(0deg) rotateX(0deg);
+      opacity: 1;
+   }
+   100%{
+     transform: translate3d(0px, 0px, 0px) rotateZ(0deg) rotateX(0deg);
+      opacity: 1;
+   }
+}
+.works-photography {
+    position: relative;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: 100vmin;
+}
+.first, .second, .third {
+    position: absolute;
+    width: min-content;
+    height: min-content;
+    display: grid;
+    grid-template-rows: min-content min-content;
+    font-family: "sf";
+    font-size: 1vmax;
+    transform: translateX(-50%);
+}
+.footer {
+    color: rgba(255, 255, 255, 0.44);
+    position: absolute;
+    bottom: -2vmax;
+    right: 0;
+    font-family: "sf";
+    font-size: 0.75vmax;
+}
+.first img, .second img, .third img {
+    max-width: 17vmax;
+}
+.first {
+    left: 50%;
+    top: 5vh;
+}
+.second {
+    left: 85%;
+    top: 55vh;
+}
+.third {
+    left: 15%;
+    top: 35vh;
+}
+.about {
+    position: relative;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: 80vh;
+}
+.a-h {
+    position: absolute;
+    width: 50vw;
+    height: min-content;
+    border-radius: 1.25vmax;
+    border: rgba(255, 255, 255, 0.22) 0.0001vmin solid;
+    left: 50%;
+    top: 40%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    padding: 2vmax 1.5vmax;
+    font-size: 0.78vw;
+    line-height: 125%;
+    font-family: "sf";
+    color: rgba(255, 255, 255, 0.44);
+}
+.a-h span {
+    color: #fff;
+}
+.a-p {
+    position: absolute;
+    width: 15vmax;
+    height: 8vmin;
+    border-radius: 1.25vmax;
+    border: rgba(255, 255, 255, 0.22) 0.0001vmin solid;
+    left: 50%;
+    top: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    padding: 1vmax;
+    font-size: 1vw;
+    font-family: "sf";
+    color: rgba(255, 255, 255, 0.44);
+}
+.aph {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    text-align: center;
+}
+.aph p span {
+    color: #fff;
+}
+.apd {
+    position: absolute;
+    right: 2vmin;
+    bottom: 2vmin;
+    font-size: 0.5vw;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "sf";
+}
+.aakash {
+    position: absolute;
+    right: 2vw;
+    bottom: 1vmin;
+    font-size: 0.75vw;
+    text-align: right;
+    text-decoration: underline;
+}
