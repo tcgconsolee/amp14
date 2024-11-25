@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "sf";
+    src: url(./fonts/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF);
+}
+@font-face {
+    font-family: "d";
+    src: url(./fonts/buttershine.otf);
+}
+body {
+    background: black;
+    color: white;
+    overflow-x : hidden;
+    overflow-y :auto;
+}
+.cross {
+    position: absolute;
+    left: 2vw;
+    top: 2vmax;
+    background: none;
+    border: rgba(255,255,255, 0.44) 0.0001vmin solid;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vmax;
+}
+.cpright {
+    position: absolute;
+    top: 2vmax;
+    right: 2vw;
+    font-family: "sf";
+    font-size: 0.75vmax;
+}
+p {
+    margin: none;
+}
+.head {
+    position: absolute;
+    left: 2vw;
+    font-size: 3vmax;
+    font-family: "d";
+    top: 7vmax;
+}
+.box {
+    position: absolute;
+    top: 12vmax; 
+    left: 2vw;
+    display: grid;
+    width: 20%;
+    height: 5.5vmax;
+    grid-template-rows: 50% 50%;
+    border: rgba(255,255,255, 0.44) 0.001vmin solid;
+    border-radius: 1.25vmax;
+}
+.bi {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.top {
+    font-family: "d";
+    font-size: 1.25vmax;
+}
+.bottom {
+    font-family: "sf";
+    font-size: 0.75vmax;
+}
+.banner {
+    position: absolute;
+    left: 25%;
+    top: 7vmax;
+    height: 10.5vmax;
+    width: 73%;
+    border: rgba(255,255,255, 0.44) 0.001vmin solid;
+    border-radius: 1.25vmax;
+    overflow: hidden;
+}
+.banner img {
+    width: 100%;
+}
+.work {
+    position: absolute;
+    left: 2vw;
+    width: 96vw;
+    top: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "d";
+    font-size: 5vmax;
+}
+.work img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+}
+::-webkit-scrollbar {
+    background: black;
+}
