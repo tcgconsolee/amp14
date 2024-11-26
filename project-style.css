@@ -99,9 +99,8 @@ p {
 }
 .work img {
     position: absolute;
-    left: 50%;
+    left: 0;
     top: 0;
-    transform: translateX(-50%);
     width: 100%;
 }
 ::-webkit-scrollbar {
