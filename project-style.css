@@ -87,7 +87,7 @@ p {
 }
 .work {
     position: absolute;
-    left: 2vw;
+    left: 0vw;
     width: 96vw;
     top: 45%;
     display: flex;
